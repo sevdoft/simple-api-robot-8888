@@ -1,5 +1,4 @@
-# simple-api-robot
-Automate Test for the Simple API
+# Robot Framwork for Simple API
 
-## Run Robot
-robot test-calculate.robot
+### Run Robot
+`robot test-calculate.robot`
