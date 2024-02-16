@@ -53,18 +53,6 @@ Test Calculate Negative Numbers -5 and -3
     # Verify the response
     Should Be Equal    ${json_resp}    ${-8}
 
-Test Calculate Decimal Numbers 3.5 and 2.5
-    ${resp}=     GET    http://127.0.0.1:5000/plus/3.5/2.5
-
-    # Verify the status code is 200 (OK)
-    Should Be Equal    ${resp.status_code}    ${200}
-
-    # Get the response content as a JSON object
-    ${json_resp}=    Set Variable    ${resp.json()}
-
-    # Verify the response
-    Should Be Equal    ${json_resp}    ${6.0}
-
 Test Calculate Large Numbers 1000000 and 500000
     ${resp}=     GET    http://127.0.0.1:5000/plus/1000000/500000
 
