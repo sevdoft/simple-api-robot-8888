@@ -29,7 +29,7 @@ Test Calculate Numbers 4 and 2
     # Verify the response
     Should Be Equal    ${json_resp}    ${6}
 
-Test Calculate Numbers 8.4 and 4
+Test Calculate Numbers 7 and 4
 
     ${resp}=     GET    http://127.0.0.1:5000/plus/8.4/4
 
@@ -40,4 +40,4 @@ Test Calculate Numbers 8.4 and 4
     ${json_resp}=    Set Variable  ${resp.json()}
 
     # Verify the response
-    Should Be Equal    ${json_resp}    ${12.4}
+    Should Be Equal    ${json_resp}    ${11}
